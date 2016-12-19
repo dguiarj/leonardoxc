@@ -59,7 +59,7 @@
 			  gliderBrandID int(11) NOT NULL default '0',
 			  PRIMARY KEY  (glider ),
 			  KEY gliderBrandID(gliderBrandID)
-			) TYPE=MyISAM;");
+			) ENGINE=MyISAM;");
 		execMysqlQuery("		
 			INSERT INTO temp_leonardo_gliders
 			SELECT glider, '', 0
